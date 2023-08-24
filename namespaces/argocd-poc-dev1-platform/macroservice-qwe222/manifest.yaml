@@ -7,7 +7,7 @@ metadata:
   labels:
     app: poc-dev1-macroservice-qwe222    
     athena.io/logicalenv: dev
-    athena.io/chart: helm-guestbook-0.3.0
+    athena.io/chart: helm-guestbook-0.1.5
     athena.io/release: release-name
     athena.io/service: Helm
     athena.io/namespace: argocd-poc-dev1-platform
@@ -43,9 +43,9 @@ spec:
     metadata:
       labels:
         app: poc-dev1-macroservice-qwe222
-        deploymentid: time-1692890886        
+        deploymentid: time-1692897856        
         athena.io/logicalenv: dev
-        athena.io/chart: helm-guestbook-0.3.0
+        athena.io/chart: helm-guestbook-0.1.5
         athena.io/release: release-name
         athena.io/service: Helm
         athena.io/namespace: argocd-poc-dev1-platform
