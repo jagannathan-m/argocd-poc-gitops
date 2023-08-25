@@ -7,10 +7,11 @@ metadata:
   labels:
     app: poc-dev1-macroservice-qwe222    
     athena.io/logicalenv: dev
-    athena.io/chart: helm-guestbook-0.2.0
+    athena.io/chart: helm-guestbook-0.3.0
     athena.io/release: release-name
     athena.io/service: Helm
     athena.io/namespace: argocd-poc-dev1-platform
+    atheaa.io/affinity: unspecified
   annotations:
     kong.athena.io/host: macroservice-clinicals.*
     kong.athena.io/path: /qwe222
@@ -42,12 +43,13 @@ spec:
     metadata:
       labels:
         app: poc-dev1-macroservice-qwe222
-        deploymentid: time-1692952327        
+        deploymentid: time-1692952467        
         athena.io/logicalenv: dev
-        athena.io/chart: helm-guestbook-0.2.0
+        athena.io/chart: helm-guestbook-0.3.0
         athena.io/release: release-name
         athena.io/service: Helm
         athena.io/namespace: argocd-poc-dev1-platform
+        atheaa.io/affinity: unspecified
     spec:
       containers:
         - name: poc-dev1-macroservice-qwe222
@@ -69,12 +71,12 @@ spec:
             limits:
               cpu: 200m
               memory: 100Mi
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions:
-              - key: Location
-                operator: In
-                values:
-                - us-east-1
+      # affinity:
+      #   nodeAffinity:
+      #     requiredDuringSchedulingIgnoredDuringExecution:
+      #       nodeSelectorTerms:
+      #       - matchExpressions:
+      #         - key: Location
+      #           operator: In
+      #           values:
+      #           - us-east-1
