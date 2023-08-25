@@ -42,7 +42,7 @@ spec:
     metadata:
       labels:
         app: poc-prod2-macroservice
-        deploymentid: time-1692952689        
+        deploymentid: time-1692961283        
         athena.io/logicalenv: prod
         athena.io/chart: helm-guestbook-0.6.0
         athena.io/release: release-name
